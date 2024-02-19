@@ -1,0 +1,78 @@
+Le CSS, abréviation de Cascading Style Sheets (Feuilles de style en cascade), est un langage utilisé pour décrire la présentation d'un document écrit en HTML (ou XML). Il permet de contrôler l'apparence visuelle des éléments d'une page web, tels que la couleur, la police de caractères, la taille, le positionnement, etc. Voici une explication détaillée des concepts de base du CSS :
+
+Sélecteurs CSS :
+Les sélecteurs CSS sont des motifs utilisés pour cibler les éléments HTML auxquels vous souhaitez appliquer des styles. Voici quelques exemples de sélecteurs couramment utilisés :
+
+Sélecteur d'élément : Il cible un type d'élément HTML spécifique. Par exemple, p ciblera tous les paragraphes.
+Sélecteur de classe : Il cible les éléments qui ont une classe spécifique. Par exemple, .ma-classe ciblera tous les éléments avec la classe "ma-classe".
+Sélecteur d'identifiant : Il cible un élément avec un identifiant spécifique. Par exemple, #mon-id ciblera l'élément avec l'ID "mon-id".
+Propriétés CSS :
+Les propriétés CSS définissent l'apparence des éléments ciblés. Voici quelques exemples de propriétés couramment utilisées :
+
+color : Définit la couleur du texte.
+font-size : Définit la taille de la police de caractères.
+font-family : Définit la police de caractères à utiliser.
+background-color : Définit la couleur d'arrière-plan.
+margin : Définit la marge autour de l'élément.
+padding : Définit l'espacement à l'intérieur de l'élément.
+Syntaxe CSS :
+La syntaxe CSS est composée de règles qui spécifient les styles à appliquer aux éléments ciblés. Une règle CSS est composée d'un sélecteur suivi d'un bloc de déclarations entre accolades. Chaque déclaration est composée d'une propriété suivie de sa valeur, séparées par un deux-points (:), et chaque déclaration est terminée par un point-virgule (;). Voici un exemple de règle CSS :
+
+css
+Copy code
+p {
+    color: blue;
+    font-size: 16px;
+}
+Dans cet exemple, le sélecteur p cible tous les paragraphes, et les déclarations à l'intérieur du bloc définissent que le texte sera de couleur bleue et aura une taille de police de 16 pixels.
+
+Lien entre HTML et CSS :
+Pour appliquer des styles CSS à un document HTML, vous pouvez inclure vos règles CSS directement dans le balisage HTML en utilisant la balise <style>, ou vous pouvez lier un fichier CSS externe en utilisant la balise <link>. Voici un exemple de chaque méthode :
+
+Méthode 1 : Style interne (balise <style> dans le <head> du document HTML) :
+html
+Copy code
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: blue;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <p>Ceci est un paragraphe avec un style CSS appliqué.</p>
+</body>
+</html>
+Méthode 2 : Style externe (lien vers un fichier CSS externe) :
+HTML :
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <p>Ceci est un paragraphe avec un style CSS appliqué.</p>
+</body>
+</html>
+CSS (dans un fichier nommé "styles.css") :
+
+css
+Copy code
+p {
+    color: blue;
+    font-size: 16px;
+}
+Conclusion :
+Le CSS est un outil puissant pour styliser et mettre en forme des pages web. En combinant judicieusement les sélecteurs et les propriétés, vous pouvez créer des mises en page attrayantes et réactives pour vos sites web. N'hésitez pas à explorer davantage les fonctionnalités avancées du CSS, telles que les transitions, les animations, les grilles CSS, etc., pour améliorer l'aspect visuel et l'expérience utilisateur de vos pages web.
